@@ -1,7 +1,14 @@
 # SEA Catering Application
 
-![SEA Catering Banner](URL_SCREENSHOT_BANNER_ATAU_HERO_APLIKASI_ANDA)
-*(Ganti placeholder di atas dengan URL screenshot banner atau bagian hero aplikasi Anda.)*
+![SEA Catering ]
+
+![alt text](screencapture-localhost-5173-2025-06-27-23_43_49.png)
+
+Light Mode
+![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.36.19_52943ab2.jpg>)
+
+Dark Mode
+![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.30.49_ed51cb82.jpg>)
 
 Aplikasi SEA Catering adalah platform web/mobile yang dirancang untuk streamline pemesanan dan pengelolaan paket makanan sehat kustomisasi, sekaligus menyediakan insight bisnis esensial bagi manajemen. Proyek ini dibangun sebagai solusi full-stack dalam tantangan bootcamp, mencakup fungsionalitas inti dari frontend, backend, hingga integrasi database dan aspek keamanan.
 
@@ -34,10 +41,9 @@ Pastikan Anda memiliki **Node.js (dengan npm/Yarn), Git, dan akun MongoDB Atlas*
 
 1.  **Clone Repository:**
     ```bash
-    git clone <URL_REPOSITORY_ANDA>
+    git clone https://github.com/Mangriza/Sea-Catering.git
     cd sea-catering-app
     ```
-    *(Ganti dengan URL repository Anda di GitHub/GitLab.)*
 
 2.  **Konfigurasi Backend (Server):**
     ```bash
@@ -78,25 +84,21 @@ Pastikan Anda memiliki **Node.js (dengan npm/Yarn), Git, dan akun MongoDB Atlas*
 
 Sertakan *screenshot* yang jelas untuk setiap bagian kunci aplikasi. Simpan gambar di folder `docs/` di *root* proyek Anda (`sea-catering-app/docs/`) dan sesuaikan *path* di bawah.
 
-* **Homepage:**
-    ![Homepage](docs/homepage.png)
+
 * **Menu / Meal Plans (dengan modal detail):**
-    ![Menu Page](docs/menu-page.png)
+![alt text](image.png)
 * **Formulir Langganan:**
-    ![Subscription Form](docs/subscription-form.png)
+![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.45.43_eeffe782-1.jpg>)
 * **Halaman Registrasi/Login:**
-    ![Auth Pages](docs/auth-pages.png)
+![alt text](image-1.png)
 * **User Dashboard:**
-    ![User Dashboard](docs/user-dashboard.png)
+![alt text](image-2.png)
 * **Admin Dashboard:**
-    ![Admin Dashboard](docs/admin-dashboard.png)
-* *(Tambahkan screenshot lain jika ada fitur bonus yang menonjol.)*
+![alt text](image-3.png)
 
 ---
 
 ## Deployment (Poin Bonus)
-
-
 
 ---
 
@@ -104,7 +106,6 @@ Sertakan *screenshot* yang jelas untuk setiap bagian kunci aplikasi. Simpan gamb
 
 Untuk pertanyaan atau informasi lebih lanjut, silakan hubungi:
 
-* [Nama Lengkap Anda] - [Email Anda]
-* Brian (Manajer SEA Catering) - 08123456789
+* rizabucarelli@gmail.com
 
 ---
