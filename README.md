@@ -8,7 +8,7 @@ Light Mode
 ![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.36.19_52943ab2.jpg>)
 
 Dark Mode
-![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.30.49_ed51cb82.jpg>)
+![alt text](<Gambar WhatsApp 2025-06-27 pukul 23.30.49_834378cd.jpg>)
 
 Aplikasi SEA Catering adalah platform web/mobile yang dirancang untuk streamline pemesanan dan pengelolaan paket makanan sehat kustomisasi, sekaligus menyediakan insight bisnis esensial bagi manajemen. Proyek ini dibangun sebagai solusi full-stack dalam tantangan bootcamp, mencakup fungsionalitas inti dari frontend, backend, hingga integrasi database dan aspek keamanan.
 
