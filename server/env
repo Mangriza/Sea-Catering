@@ -1,0 +1,3 @@
+MONGO_URI=mongodb+srv://username:password@cluster0.xmzmgej.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+PORT=5000
+JWT_SECRET=-UR_SECRET_CODE

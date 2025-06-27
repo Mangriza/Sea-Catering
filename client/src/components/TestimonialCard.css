@@ -1,0 +1,45 @@
+/* client/src/components/TestimonialCard.css */
+.testimonial-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2em 1.5em 1.5em 1.5em;
+    margin: 1em auto;
+    max-width: 420px;
+    text-align: center;
+    color: var(--text);
+    transition: box-shadow var(--transition), background var(--transition);
+}
+
+.testimonial-card .customer-name {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.testimonial-card .testimonial-message {
+    color: var(--text-soft);
+    font-size: 1.05em;
+    margin-bottom: 1em;
+}
+
+.testimonial-card .testimonial-rating {
+    color: #FFD700;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.testimonial-card .star.filled {
+    color: #ffc107;
+}
+
+.testimonial-card .star {
+    color: #ccc; /* Warna bintang kosong */
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+}

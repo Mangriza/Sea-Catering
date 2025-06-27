@@ -1,0 +1,195 @@
+/* client/src/pages/UserDashboardPage.css */
+.user-dashboard {
+    text-align: center;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .subscriptions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .subscription-card {
+    background-color: var(--card-bg);
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    width: 100%;
+    max-width: 380px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+  }
+  
+  .subscription-card h3 {
+    color: var(--primary);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    transition: color 0.2s;
+  }
+  
+  .subscription-card p {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: var(--text);
+    transition: color 0.2s;
+  }
+  
+  .subscription-card strong {
+    color: var(--primary-dark);
+    transition: color 0.2s;
+  }
+  
+  .status-active { color: #28a745; font-weight: bold; }
+  .status-paused { color: #ffc107; font-weight: bold; }
+  .status-cancelled { color: #dc3545; font-weight: bold; }
+  
+  .subscription-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .subscription-actions button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; /* Agar tombol mengisi ruang yang tersedia */
+  }
+  
+  .pause-btn {
+    background-color: #ffc107;
+    color: #333;
+  }
+  .pause-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .resume-btn {
+      background-color: #007bff;
+      color: white;
+  }
+  .resume-btn:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Modal Styling (untuk jeda) - bisa disatukan dengan Modal.css jika mau, tapi ini spesifik */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Lebih tinggi dari modal umum */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .modal-content h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .modal-content .form-group label {
+      font-weight: normal;
+      color: #333;
+      margin-bottom: 5px;
+  }
+  
+  .modal-content .form-group input[type="date"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+      box-sizing: border-box;
+  }
+  
+  .modal-content .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .modal-content .submit-btn:hover {
+      background-color: #218838;
+  }
+  .modal-content .cancel-btn {
+      background-color: #6c757d;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+  }
+  .modal-content .cancel-btn:hover {
+      background-color: #5a6268;
+  }
+
+.page-container {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background 0.2s, color 0.2s;
+}
+
+body.dark-mode .user-dashboard,
+body.dark-mode .page-container {
+    background: var(--bg);
+    color: #fff;
+}
+
+body.dark-mode .subscription-card {
+    background: var(--navy);
+    color: #fff;
+    border: 1.5px solid #222b44;
+}
+body.dark-mode .subscription-card h3 {
+    color: #fff;
+}
+body.dark-mode .subscription-card p {
+    color: #fff;
+}
+body.dark-mode .subscription-card strong {
+    color: #FFD700;
+}

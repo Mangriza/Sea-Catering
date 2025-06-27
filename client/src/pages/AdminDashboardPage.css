@@ -1,0 +1,117 @@
+/* client/src/pages/AdminDashboardPage.css */
+.admin-dashboard {
+    text-align: center;
+}
+
+.date-range-selector {
+    margin-bottom: 30px;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border: 1.5px solid var(--primary);
+    box-shadow: var(--shadow-soft);
+    transition: background 0.2s, color 0.2s;
+}
+
+.date-range-selector label {
+    font-weight: 700;
+    color: var(--text);
+    margin-right: 6px;
+}
+
+.date-range-selector input[type="date"] {
+    padding: 10px 14px;
+    border: 1.5px solid var(--primary);
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    background: var(--bg);
+    color: var(--text);
+    transition: border 0.2s, background 0.2s, color 0.2s;
+}
+.date-range-selector input[type="date"]:focus {
+    border: 1.5px solid var(--primary-dark);
+    outline: none;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.metric-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 32px 20px 28px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid #eee;
+    transition: background 0.2s, color 0.2s;
+}
+
+.metric-card h3 {
+    color: var(--primary);
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.metric-card .metric-value {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+body.dark-mode .admin-dashboard {
+    background: var(--bg);
+    color: #fff;
+}
+body.dark-mode .date-range-selector {
+    background: var(--navy);
+    border: 1.5px solid var(--primary-dark);
+    box-shadow: var(--shadow);
+}
+body.dark-mode .date-range-selector label {
+    color: #fff;
+}
+body.dark-mode .date-range-selector input[type="date"] {
+    background: var(--card-bg);
+    color: #fff;
+    border: 1.5px solid var(--primary);
+}
+body.dark-mode .metric-card {
+    background: var(--navy);
+    color: #fff;
+    border: 1.5px solid #222b44;
+}
+body.dark-mode .metric-card h3 {
+    color: var(--primary);
+}
+body.dark-mode .metric-card .metric-value {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .date-range-selector {
+        flex-direction: column;
+        align-items: center;
+    }
+    .date-range-selector input[type="date"] {
+        width: 80%;
+    }
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}

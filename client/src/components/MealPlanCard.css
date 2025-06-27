@@ -1,0 +1,90 @@
+/* client/src/components/MealPlanCard.css */
+.meal-plan-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    border: 1.5px solid #eee;
+    padding: 2em 1.2em 1.5em 1.2em;
+    text-align: center;
+    margin: 0;
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--text);
+  }
+  
+  .meal-plan-card:hover {
+    transform: translateY(-8px) scale(1.025);
+    box-shadow: 0 12px 36px rgba(24,28,42,0.16);
+  }
+  
+  .plan-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(24,28,42,0.08);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .meal-plan-card:hover .plan-image {
+    transform: scale(1.04);
+    box-shadow: 0 6px 24px rgba(24,28,42,0.13);
+  }
+  
+  .meal-plan-card h3 {
+    color: var(--primary);
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  .plan-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+  
+  .plan-description {
+    font-size: 1em;
+    color: var(--text-soft);
+    line-height: 1.5;
+    margin-bottom: 18px;
+    flex-grow: 1;
+  }
+  
+  .details-button {
+    background: var(--primary);
+    color: #FFF;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(24,28,42,0.10);
+    transition: background var(--transition), transform var(--transition);
+    margin-top: 10px;
+  }
+  
+  .details-button:hover {
+    background: var(--primary-dark);
+    transform: scale(1.04);
+  }
+  
+  @media (max-width: 900px) {
+    .meal-plan-card {
+      width: 100%;
+      margin: 10px 0;
+      padding: 1.2em 0.7em;
+    }
+    .plan-image {
+      height: 150px;
+    }
+  }

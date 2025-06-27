@@ -1,0 +1,151 @@
+/* client/src/pages/AuthForm.css */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Kurangi tinggi navbar */
+    background-color: var(--bg);
+    padding: 20px;
+  }
+  
+  .auth-form {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1.5px solid #eee;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .auth-form h2 {
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  
+  .auth-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid var(--primary);
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: var(--input-bg, var(--card-bg));
+    color: var(--text);
+    transition: border 0.2s, background 0.2s, color 0.2s;
+  }
+  
+  .auth-form input:focus {
+    border: 1.5px solid var(--primary-dark);
+    outline: none;
+    background: var(--bg);
+  }
+  
+  .auth-form button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.08);
+  }
+  
+  .auth-form button:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+  }
+  
+  .auth-form button:disabled {
+      background-color: #a0a0a0;
+      cursor: not-allowed;
+  }
+  
+  .auth-form .error-message {
+    color: #dc3545;
+    font-size: 0.95em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #ffebeb;
+    border: 1px solid #dc3545;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .auth-switch {
+    margin-top: 25px;
+    font-size: 0.98em;
+    color: var(--text-soft);
+  }
+  
+  .auth-switch span {
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  .auth-switch span:hover {
+      color: var(--primary-dark);
+  }
+  
+  .password-hint {
+      font-size: 0.88em;
+      color: var(--text-soft);
+      margin-top: 5px;
+      text-align: left;
+  }
+
+  body.dark-mode .auth-form {
+    background-color: var(--navy);
+    color: #fff;
+    border: 1.5px solid #222b44;
+  }
+  body.dark-mode .auth-form label {
+    color: #fff;
+  }
+  body.dark-mode .auth-form input[type="text"],
+  body.dark-mode .auth-form input[type="email"],
+  body.dark-mode .auth-form input[type="password"] {
+    background: var(--card-bg);
+    color: #fff;
+    border: 1.5px solid var(--primary);
+  }
+  body.dark-mode .auth-form input:focus {
+    background: var(--bg);
+  }
+  body.dark-mode .auth-switch {
+    color: #e0e0e0;
+  }
+  body.dark-mode .auth-switch span {
+    color: var(--primary);
+  }
+  body.dark-mode .auth-switch span:hover {
+    color: var(--primary-dark);
+  }
+  body.dark-mode .password-hint {
+    color: #b0b0b0;
+  }

@@ -1,0 +1,162 @@
+/* client/src/components/SubscriptionForm.css */
+.subscription-form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px 32px;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1.5px solid #eee;
+    text-align: left;
+    color: var(--text);
+    transition: background var(--transition), color var(--transition);
+  }
+  
+  .subscription-form-container h2 {
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.1px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background: var(--bg);
+    color: var(--text);
+    transition: border-color var(--transition), background var(--transition), color var(--transition);
+    box-sizing: border-box;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .radio-option input[type="radio"],
+  .checkbox-option input[type="checkbox"] {
+    accent-color: var(--primary);
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    background: var(--bg);
+  }
+  
+  .radio-option input[type="radio"]:focus,
+  .checkbox-option input[type="checkbox"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px #FF980033;
+  }
+  
+  .radio-option label, .checkbox-option label {
+    font-weight: 500;
+    color: var(--text-soft);
+    margin-bottom: 0;
+  }
+  
+  .total-price-display {
+    background: #FFF7E6;
+    border: 1.5px solid var(--primary);
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-top: 18px;
+    text-align: center;
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 1.2em;
+    box-shadow: 0 2px 8px rgba(24,28,42,0.07);
+    transition: background var(--transition), color var(--transition);
+  }
+  
+  .dark-mode .total-price-display {
+    background: #23273A;
+    color: var(--primary);
+  }
+  
+  .total-price-display h3 {
+    color: var(--primary-dark);
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .btn-primary {
+    background: var(--primary);
+    color: #FFF;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.9em 2em;
+    font-weight: 700;
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+    font-size: 1.1em;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: scale(1.04);
+  }
+  
+  .error-message {
+    color: #FF5252;
+    font-size: 0.97em;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+  
+  .input-error {
+    border-color: #FF5252 !important;
+  }
+  
+  @media (max-width: 700px) {
+    .subscription-form-container {
+      max-width: 98vw;
+      padding: 16px 4px;
+    }
+    .total-price-display {
+      font-size: 1em;
+      padding: 12px 6px;
+    }
+  }

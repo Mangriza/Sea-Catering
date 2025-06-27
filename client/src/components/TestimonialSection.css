@@ -1,0 +1,206 @@
+/* client/src/components/TestimonialsSection.css */
+.testimonials-section {
+    background: var(--bg);
+    padding: 3em 1em 2em 1em;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 900px;
+    margin: 2em auto;
+    color: var(--text);
+}
+
+.testimonials-section h2 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.carousel-nav-btn {
+    background: var(--primary);
+    color: #FFF;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.carousel-nav-btn:hover {
+    background: var(--primary-dark);
+    color: #FFF;
+    transform: scale(1.08);
+}
+
+/* Testimonial Form Styling */
+.testimonials-section h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.testimonial-form {
+    margin-top: 2em;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2em 1.5em;
+    color: var(--text);
+    border: 1.5px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Penting untuk lebar input */
+}
+
+.form-group textarea {
+    resize: vertical; /* Memungkinkan pengguna mengubah tinggi textarea */
+}
+
+.rating-input {
+    display: flex;
+    gap: 5px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 6px 12px;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+body.dark-mode .rating-input {
+    background: #1a223a;
+}
+
+.rating-input .star-input {
+    color: #FFD700;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform var(--transition);
+    background: transparent;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.rating-input .star-input.selected {
+    transform: scale(1.15);
+    color: #FFD700;
+    filter: drop-shadow(0 0 2px #222b44cc);
+}
+
+.submit-testimonial-btn {
+    background: var(--primary);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 2em;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.submit-testimonial-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.04);
+}
+
+/* Responsif untuk form */
+@media (max-width: 600px) {
+    .testimonial-form {
+        padding: 20px;
+    }
+}
+
+.testimonial-list-scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 8px 0 16px 0;
+  margin-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.testimonial-list-scroll::-webkit-scrollbar {
+  display: none;
+}
+.testimonial-list-card {
+  display: inline-block;
+  min-width: 220px;
+  max-width: 260px;
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+  padding: 1em 1.2em 0.8em 1.2em;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: left;
+  font-size: 1em;
+  position: relative;
+  transition: box-shadow var(--transition), background var(--transition), color var(--transition);
+  border: 1.5px solid #eee;
+}
+.testimonial-list-card:hover {
+  box-shadow: 0 8px 32px rgba(24,28,42,0.18);
+  transform: translateY(-2px) scale(1.01);
+}
+.testimonial-list-rating {
+  color: #FFD700;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+.testimonial-list-message {
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: var(--text-soft);
+}
+.testimonial-list-name {
+  font-size: 0.98em;
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 0.2em;
+}
+@media (max-width: 600px) {
+  .testimonial-list-card {
+    min-width: 150px;
+    max-width: 180px;
+    font-size: 0.92em;
+    padding: 0.7em 0.7em 0.6em 0.7em;
+  }
+  .testimonial-list-rating {
+    font-size: 1em;
+  }
+}

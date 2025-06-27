@@ -1,0 +1,311 @@
+/* client/src/App.css */
+:root {
+  --primary: #FF9800; /* Oranye */
+  --primary-dark: #F57C00;
+  --navy: #181C2A;
+  --navy-dark: #10131B;
+  --bg: #FFF;
+  --card-bg: #FAFAFA;
+  --text: #181C2A;
+  --text-soft: #444;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(24,28,42,0.13);
+  --shadow-soft: 0 2px 8px rgba(24,28,42,0.07);
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  transition: background var(--transition), color var(--transition);
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--text);
+  margin-bottom: 0.5em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--primary-dark);
+}
+.card, .testimonial-list-card, .gallery-card, .testimonial-form, .operational-section, .features-section .card {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border: 1.5px solid #eee;
+  color: var(--text);
+  border-radius: var(--radius);
+  transition: box-shadow var(--transition), background var(--transition), color var(--transition);
+}
+.card:hover, .features-section .card:hover, .gallery-card:hover, .testimonial-list-card:hover {
+  box-shadow: 0 8px 32px rgba(24,28,42,0.18);
+  transform: translateY(-2px) scale(1.01);
+}
+.btn-primary {
+  background: var(--primary);
+  color: #FFF;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75em 2em;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: scale(1.04);
+}
+.btn-secondary {
+  background: var(--card-bg);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 0.75em 2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.btn-secondary:hover {
+  background: var(--primary);
+  color: #FFF;
+}
+input, textarea, select {
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  background: var(--card-bg);
+  color: var(--text);
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+.error-message {
+  color: #FF5252;
+  font-size: 0.95em;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+}
+
+/* DARK MODE */
+.dark-mode {
+  --bg: #181C2A;
+  --card-bg: #23273A;
+  --text: #FFF;
+  --text-soft: #EEE;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1em;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 0.75em 1em;
+    font-size: 1em;
+  }
+}
+
+.homepage {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  background: var(--navy);
+  color: #FFF;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 8px 32px rgba(24,28,42,0.10);
+  padding: 60px 20px;
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-section .slogan {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.hero-section .cta-btn {
+  background: var(--primary);
+  color: #FFF;
+  border-radius: 8px;
+  padding: 0.8em 2.2em;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 0 0.5em;
+  border: none;
+  box-shadow: 0 2px 8px rgba(24,28,42,0.10);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.hero-section .cta-btn:hover {
+  background: var(--primary-dark);
+  transform: scale(1.04);
+}
+
+.main-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.welcome-section, .features-section {
+  margin-bottom: 40px;
+}
+
+.welcome-section h2, .features-section h2, .contact-section h2 {
+  color: var(--primary);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.features-section li {
+  background-color: #e9f7ef; /* Hijau muda */
+  padding: 15px 25px;
+  border-radius: 5px;
+  flex: 1 1 calc(50% - 40px); /* Dua kolom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+}
+
+.contact-section {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.page-title {
+  color: var(--primary);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.meal-plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pusatkan kartu-kartu */
+  gap: 20px; /* Jarak antar kartu */
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .meal-plans-grid {
+    flex-direction: column; /* Kartu akan bertumpuk di mobile */
+    align-items: center; /* Pusatkan kartu di mobile */
+  }
+  .meal-plan-card {
+    width: 90%; /* Lebar kartu di mobile */
+  }
+}
+
+.features-section h3 {
+  color: var(--primary);
+}
+
+.features-section i {
+  color: var(--primary);
+}
+
+.operational-section {
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #181C2A11;
+  padding: 2em 1em;
+}
+
+.operational-section .open-status {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.operational-section .closed-status {
+  color: #FF5252;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.gallery-section {
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #181C2A11;
+  padding: 2em 1em;
+}
+
+.gallery-card {
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(24,28,42,0.10);
+  padding: 1.2em 1em;
+  margin: 0 0.5em;
+  min-width: 160px;
+  text-align: center;
+}
+
+.footer {
+  background: var(--navy);
+  color: #FFF;
+  text-align: center;
+  padding: 2em 0 1em 0;
+  font-size: 1.1em;
+  border-radius: 24px 24px 0 0;
+  margin-top: 3em;
+}
+
+.footer a {
+  color: var(--primary);
+}
