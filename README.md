@@ -100,6 +100,7 @@ Sertakan *screenshot* yang jelas untuk setiap bagian kunci aplikasi. Simpan gamb
 
 ## Deployment (Poin Bonus)
 
+https://sea-catering-eight.vercel.app/
 ---
 
 ## Kontak
