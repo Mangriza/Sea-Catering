@@ -2,6 +2,17 @@
 
 ![SEA Catering ]
 
+## https://sea-catering-eight.vercel.app/
+
+
+Teknologi yang Digunakan
+
+* **Frontend:** React.js, Vite, React Router DOM, CSS3
+* **Backend:** Node.js, Express.js, MongoDB (via MongoDB Atlas), Mongoose, Bcrypt.js, jsonwebtoken, CORS, Dotenv
+
+
+
+
 ![alt text](screencapture-localhost-5173-2025-06-27-23_43_49.png)
 
 Light Mode
@@ -28,10 +39,6 @@ Aplikasi SEA Catering adalah platform web/mobile yang dirancang untuk streamline
 
 ---
 
-## Teknologi yang Digunakan
-
-* **Frontend:** React.js, Vite, React Router DOM, CSS3
-* **Backend:** Node.js, Express.js, MongoDB (via MongoDB Atlas), Mongoose, Bcrypt.js, jsonwebtoken, CORS, Dotenv
 
 ---
 
